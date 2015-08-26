@@ -1,22 +1,79 @@
 ---
-title: "IRB Sevens Series Elo Ratings"
+title: "HSBC World Rubgy Sevens Series Elo Ratings"
 author: "Max Wyman"
-date: "June 30, 2015"
+date: "August 26, 2015"
 output: html_document
 ---
+## Introduction   
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+The ranking system is an implementation of that used in chess ("Elo ratings" <https://en.wikipedia.org/wiki/Elo_rating_system>) and also applied to National Football League games by the FiveThirtyEight (<http://www.fivethirtyeight.com>).
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+## Data Source
+
+Match results were scraped from PulseLive's (<http://pulselive.com>) JSON database which can be found at <http://cmsapi.pulselive.com/rugby/match.json>
+
+## Rugby Sevens description
+
+Sevens is a variation of rugby played on the same size pitch as Rugby Union (or XVs) but with seven players per side instead of 15.  Games are shorter (14 minutes vs 80 minutes) and multiple games are played in a day.  More on the rules and differences from XVs can be found at: <https://en.wikipedia.org/wiki/Rugby_sevens> and <http://www.worldrugby.org/sevens-series/>
+
+## Ratings description
+
+Elo rating calculated using the following formula
+
+$$ R_N =  $$
+
+## Model description
+
+Win probablities calculated using the following formula
+
+$$ P_A =  $$
+
+## 1999-2000 Season (Ratings)
+
+### Tournaments
+
+### Ratings evolution
+
+Plot:
+
+![1999-2000 Elo Rating Evolution](1999-2000_elo_evolution.png)
+
+Final Table:
+
+
+
+## 2000-2001 Season (Ratings and initial modeling results)
+
+### Pre-season ratings
+
+### Predictions
+
+### Results
+
+## 2001-2002 Season (Ratings and modeling results)
+
+### Pre-season ratings
+
+### Predictions
+
+### Results
+
+### Post-season model updates and discussion
+
+## 2002-2015 Seasons (Ratings and modeling results)
+
+## 2015-2016 Predictions
+
 
 ```{r}
-summary(cars)
+
 ```
 
-You can also embed plots, for example:
 
 ```{r, echo=FALSE}
-plot(cars)
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Discussion
+
+Lessons learned; What to update/improve; 
